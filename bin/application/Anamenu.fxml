@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="paneAnamenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="947.0" style="-fx-background-color: #00e676;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Anamenu">
+   <children>
+      <ImageView fitHeight="59.0" fitWidth="601.0" layoutX="143.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resimler/kargotakip.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="20.0" layoutY="81.0" prefHeight="165.0" prefWidth="822.0">
+         <children>
+            <HBox>
+               <children>
+                  <ImageView fitHeight="111.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resimler/browser.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="108.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resimler/explorer.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="108.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resimler/find-icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="108.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resimler/Place-selection-icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="108.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resimler/person-icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="108.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resimler/name-card-icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnkargoListele" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: #00cbcc; -fx-border-color: #ffffff; -fx-border-width: 2px 2px 2px 2px;" text="Kargo Listele" textFill="#ff7474">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="12.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnkargoEkleme" prefHeight="33.0" prefWidth="123.0" style="-fx-background-color: #00cbcc; -fx-border-color: #ffffff; -fx-border-width: 2px 2px 2px 2px;" text="Kargo Ekleme" textFill="#ff7474">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="12.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnkargoNerede" prefHeight="33.0" prefWidth="121.0" style="-fx-background-color: #00cbcc; -fx-border-color: #ffffff; -fx-border-width: 2px 2px 2px 2px;" text="Kargo Nerede" textFill="#ff7474">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="12.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="105.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnkargoTakip" style="-fx-background-color: #00cbcc; -fx-border-color: #ffffff; -fx-border-width: 2px 2px 2px 2px;" text="Kargo Takip" textFill="#ff7474">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="12.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="200.0" layoutY="10.0" mnemonicParsing="false" onAction="#BtnPersonelListele" style="-fx-background-color: #00cbcc; -fx-border-color: #ffffff; -fx-border-width: 2px 2px 2px 2px;" text="Personel Listele" textFill="#ff7474">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="12.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="295.0" layoutY="10.0" mnemonicParsing="false" onAction="#BtnpersonelEkle" style="-fx-background-color: #00cbcc; -fx-border-color: #ffffff; -fx-border-width: 2px 2px 2px 2px;" text="Personel Ekle" textFill="#ff7474">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="12.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="TableListele" layoutX="30.0" layoutY="302.0" onMouseClicked="#TableClıck" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="FaturaNO" prefWidth="75.0" text="FaturaNo" />
+          <TableColumn fx:id="GTc" prefWidth="83.0" text="GöndericiTC" />
+            <TableColumn fx:id="ATc" prefWidth="78.0" text="AlıcıTc" />
+            <TableColumn fx:id="Gİsim" prefWidth="87.0" text="Göndericiİsim" />
+            <TableColumn fx:id="Aİsim" prefWidth="66.0" text="Alıcıİsim" />
+            <TableColumn fx:id="GTel" prefWidth="110.0" text="GöndericiTel" />
+            <TableColumn fx:id="ATel" prefWidth="119.0" text="AlıcıTel" />
+            <TableColumn fx:id="Urun" prefWidth="72.0" text="Urun" />
+            <TableColumn fx:id="Adet" prefWidth="87.0" text="Adet" />
+            <TableColumn fx:id="Agirilik" prefWidth="92.0" text="Ağırlık" />
+            <TableColumn fx:id="Fiyat" prefWidth="75.0" text="Fiyat" />
+            <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

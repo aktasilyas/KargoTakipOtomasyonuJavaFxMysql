@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="1125.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KargoNerede">
+   <children>
+      <TableView fx:id="tableKargoNerede" layoutX="92.0" layoutY="33.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="FaturaNo" prefWidth="75.0" text="FaturaNo" />
+            <TableColumn fx:id="gAdı" prefWidth="75.0" text="gAdı" />
+            <TableColumn fx:id="gAdres" prefWidth="75.0" text="gAdres" />
+            <TableColumn fx:id="aAdı" prefWidth="75.0" text="aAdı" />
+            <TableColumn fx:id="aAdres" prefWidth="75.0" text="aAdres" />
+            <TableColumn fx:id="Urun" prefWidth="71.0" text="Urun" />
+            <TableColumn fx:id="Ucret" text="Ucret" />
+            <TableColumn fx:id="Durum" prefWidth="99.0" text="Durum" />
+            <TableColumn fx:id="Yer" prefWidth="116.0" text="Yer" />
+            <TableColumn fx:id="sehır" prefWidth="75.0" text="Şehir" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
